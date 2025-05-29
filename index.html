@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA991 Driving Academy - Premier Driving School in Gaborone, Botswana</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="C:Images\logo.png" alt="EA991 Driving Academy">
+                    <span>EA991 Driving Academy</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="instructors.html">Instructors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Master the Road with Confidence</h1>
+                <p>Leading driving school in Gaborone, Botswana. Professional instruction, modern vehicles, and personalized attention for every student.</p>
+                <div class="hero-buttons">
+                    <a href="courses.html" class="btn btn-primary">View Courses</a>
+                    <a href="contact.html" class="btn btn-secondary">Book Lesson</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="hero-car.jpg" alt="Professional driving instruction">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Why Choose EA991 Driving Academy?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Certified Instructors</h3>
+                        <p>Government-certified instructors with years of experience and commitment to safety.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-car"></i>
+                        <h3>Modern Fleet</h3>
+                        <p>Well-maintained vehicles equipped with dual controls and safety features for optimal learning.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Flexible Scheduling</h3>
+                        <p>Convenient lesson times that fit your schedule, including evenings and weekends.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>High Pass Rate</h3>
+                        <p>Proven track record with over 95% of students passing their driving tests on first attempt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-course-selector">
+            <div class="container">
+                <h2>Find Your Perfect Course</h2>
+                <div class="course-finder">
+                    <div class="finder-options">
+                        <label>
+                            <span>Experience Level:</span>
+                            <select id="experience">
+                                <option value="beginner">Complete Beginner</option>
+                                <option value="some">Some Experience</option>
+                                <option value="refresher">Need Refresher</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Budget Range:</span>
+                            <select id="budget">
+                                <option value="basic">P1000 - P2000</option>
+                                <option value="standard">P2000 - P3500</option>
+                                <option value="premium">P3500+</option>
+                            </select>
+                        </label>
+                        <button class="btn btn-primary" onclick="findCourse()">Find Course</button>
+                    </div>
+                    <div id="course-recommendation" class="recommendation-result"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>Student Success Stories</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <p>"EA991 made learning to drive stress-free and enjoyable. The instructors are patient and professional."</p>
+                        <cite>- Thabo M., Gaborone</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Passed my test on the first try thanks to the excellent training. Highly recommend!"</p>
+                        <cite>- Sarah K., Mogoditshane</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EA991 Driving Academy</h3>
+                    <p>Your trusted partner for safe and confident driving in Botswana.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Gaborone, Botswana</p>
+                    <p><i class="fas fa-phone"></i> +267 312 5764</p>
+                    <p><i class="fas fa-envelope"></i> info@ea991academy.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EA991 Driving Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

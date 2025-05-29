@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EA991 Driving Academy</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo.png" alt="EA991 Driving Academy">
+                    <span>EA991 Driving Academy</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="instructors.html">Instructors</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <span></span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact EA991 Driving Academy</h1>
+                <p>Get in touch to start your driving journey today</p>
+            </div>
+        </section>
+
+        <section class="contact-options">
+            <div class="container">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <h3>Call Us</h3>
+                        <p>Speak directly with our team</p>
+                        <a href="tel:+267123456789" class="contact-link">+267 312 5764</a>
+                        <small>Monday - Saturday: 8:00 AM - 6:00 PM</small>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp</h3>
+                        <p>Quick questions and booking</p>
+                        <a href="https://wa.me/2673125764" class="contact-link">Chat on WhatsApp</a>
+                        <small>Available 24/7 for messages</small>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>Detailed inquiries and information</p>
+                        <a href="mailto:info@ea991academy.com" class="contact-link">info@ea991academy.com</a>
+                        <small>Response within 24 hours</small>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Visit Us</h3>
+                        <p>Come see our facilities</p>
+                        <div class="contact-link">Gaborone Central<br>Botswana</div>
+                        <small>Appointments recommended</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-forms">
+            <div class="container">
+                <div class="forms-container">
+                    <div class="form-section">
+                        <h2>Book a Lesson</h2>
+                        <form id="bookingForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="course">Course Type *</label>
+                                <select id="course" name="course" required>
+                                    <option value="">Select a course</option>
+                                    <option value="basic">Basic Learner Course</option>
+                                    <option value="standard">Standard Course</option>
+                                    <option value="intensive">Intensive Course</option>
+                                    <option value="refresher">Refresher Course</option>
+                                    <option value="commercial">Commercial License</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="instructor">Preferred Instructor</label>
+                                <select id="instructor" name="instructor">
+                                    <option value="">No preference</option>
+                                    <option value="john">John Morake</option>
+                                    <option value="sarah">Sarah Keboneilwe</option>
+                                    <option value="david">David Molomo</option>
+                                    <option value="grace">Grace Tsheko</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="preferred-date">Preferred Start Date</label>
+                                    <input type="date" id="preferred-date" name="preferredDate">
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferred-time">Preferred Time</label>
+                                    <select id="preferred-time" name="preferredTime">
+                                        <option value="">Select time</option>
+                                        <option value="morning">Morning (8AM - 12PM)</option>
+                                        <option value="afternoon">Afternoon (12PM - 5PM)</option>
+                                        <option value="evening">Evening (5PM - 7PM)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience">Driving Experience</label>
+                                <select id="experience" name="experience">
+                                    <option value="none">Complete beginner</option>
+                                    <option value="some">Some experience</option>
+                                    <option value="returning">Returning to driving</option>
+                                    <option value="refresher">Need refresher</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Additional Information</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell us about any specific needs, concerns, or questions..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Book Lesson</button>
+                        </form>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>General Inquiry</h2>
+                        <form id="inquiryForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="inquiryName">Your Name *</label>
+                                    <input type="text" id="inquiryName" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inquiryEmail">Email Address *</label>
+                                    <input type="email" id="inquiryEmail" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inquirySubject">Subject *</label>
+                                <select id="inquirySubject" name="subject" required>
+                                    <option value="">Select subject</option>
+                                    <option value="pricing">Pricing Information</option>
+                                    <option value="courses">Course Details</option>
+                                    <option value="instructors">Instructor Information</option>
+                                    <option value="schedule">Schedule Inquiry</option>
+                                    <option value="facilities">Facility Tour</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inquiryMessage">Your Message *</label>
+                                <textarea id="inquiryMessage" name="message" rows="6" required placeholder="Please provide details about your inquiry..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-actions">
+            <div class="container">
+                <h2>Quick Actions</h2>
+                <div class="actions-grid">
+                    <div class="action-card">
+                        <i class="fas fa-download"></i>
+                        <h3>Download Brochure</h3>
+                        <p>Get detailed information about all our courses</p>
+                        <button class="btn btn-outline" onclick="downloadBrochure()">Download PDF</button>
+                    </div>
+                    <div class="action-card">
+                        <i class="fas fa-calculator"></i>
+                        <h3>Course Calculator</h3>
+                        <p>Estimate costs and duration for your training</p>
+                        <button class="btn btn-outline" onclick="openCalculator()">Open Calculator</button>
+                    </div>
+                    <div class="action-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Check Availability</h3>
+                        <p>See available slots for this week</p>
+                        <button class="btn btn-outline" onclick="checkAvailability()">Check Schedule</button>
+                    </div>
+                    <div class="action-card">
+                        <i class="fas fa-directions"></i>
+                        <h3>Get Directions</h3>
+                        <p>Find your way to our academy</p>
+                        <button class="btn btn-outline" onclick="getDirections()">View Map</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-info">
+            <div class="container">
+                <div class="location-content">
+                    <div class="location-details">
+                        <h2>Visit Our Academy</h2>
+                        <div class="address-info">
+                            <div class="address-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Address:</strong>
+                                    <p>Fairgrounds International Office Park, Plot 50661<br>Gaborone, Botswana</p>
+                                </div>
+                            </div>
+                            <div class="address-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Operating Hours:</strong>
+                                    <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 8:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                            <div class="address-item">
+                                <i class="fas fa-parking"></i>
+                                <div>
+                                    <strong>Parking:</strong>
+                                    <p>Free parking available on-site<br>Accessible entrance and facilities</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transport-info">
+                            <h3>Getting Here</h3>
+                            <ul>
+                                <li><strong>By Car:</strong> Central location with easy access from all areas of Gaborone</li>
+                                <li><strong>By Public Transport:</strong> Regular bus routes stop nearby</li>
+                                <li><strong>By Taxi:</strong> Available from all parts of the city</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="map-placeholder">
+                        <div class="map-container">
+                            <img src="map-placeholder.jpg" alt="Location map">
+                            <div class="map-overlay">
+                                <button class="btn btn-primary" onclick="openMap()">View Interactive Map</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How do I book my first lesson?</h3>
+                        <p>You can book through our online form above, call us directly, or visit our academy. We'll discuss your needs and schedule a convenient time.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What should I bring to my first lesson?</h3>
+                        <p>Bring a valid ID, learner's permit (if you have one), and comfortable closed shoes. We provide everything else needed for the lesson.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I choose my instructor?</h3>
+                        <p>Yes! You can request a specific instructor when booking, and we'll do our best to accommodate your preference based on availability.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer weekend lessons?</h3>
+                        <p>Yes, we offer lessons on Saturdays. Some instructors also provide Sunday lessons by special arrangement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EA991 Driving Academy</h3>
+                    <p>Your trusted partner for safe and confident driving in Botswana.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Gaborone, Botswana</p>
+                    <p><i class="fas fa-phone"></i> +267 312 5764</p>
+                    <p><i class="fas fa-envelope"></i> info@ea991academy.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EA991 Driving Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
