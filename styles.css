@@ -229,8 +229,6 @@ p {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), 
-                url('Images/hero-car.jpg') center/cover no-repeat;
 }
 
 .hero-content h1 {
